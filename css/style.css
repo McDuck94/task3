@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 500px;
+    background-color: #008000;
+    background-image: url(../images/archery.png);
+    background-size: cover;
+}
+
+h1 {
+    color: #fff;
+    font-size: 6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.news {
+    background-color: #fff;
+    padding: 50px 0 32px;
+    
+}
+
+.news:nth-child(odd) {
+    background-color: black;
+  
+}
+
+/* Заголовки <h2> двух первых новостей с обозначением "New", Не смог допереть как их сделать по-другому без присвоения класса(*/
+
+.last::before {
+    content: "(New)";
+    font-style: italic;
+    
+}
+
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid #654321;
+}
+
+article a {
+    color: #654321;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #42aaff;
+}
+
+article h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    color: #7d7f7d;
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300%;
+    object-fit: cover;
+}
+
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links > a {
+    color: #654321; /*Цвет ссылок*/
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+footer a:hover {
+    color: #42aaff; /*Цвет при наведении курсора на ссылки в подвале*/
+}
+
+.copyright {
+    color: #654321; /*Цвет Авторского права*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*Стиль текста*/
+    letter-spacing: .1rem; /*Межбуквенный интервал*/
+}
